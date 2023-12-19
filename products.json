@@ -1,0 +1,10 @@
+{
+    "Toothbrush": {
+        "Price": 9,
+        "Tags": ["Health"]
+    },
+    "Game of Thrones Kit": {
+        "Price": 100000000,
+        "Tags": ["Super Rare", "Never existed!"]
+    }
+}
