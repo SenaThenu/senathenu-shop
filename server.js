@@ -18,10 +18,11 @@ const app = express();
 
 app.set("view engine", "ejs");
 app.set("views", __dirname + "/views");
-app.set(expressLayouts);
+app.set("layout", "layouts/layout");
 
 app.use(cors()); // cross origin resource sharing set up!
 app.use(express.json()); // JSON format responses
+app.use(expressLayouts); // EJS Layouts
 app.use(express.urlencoded({ extended: true })); // allows us to access the form stuff
 
 const PORT = 8000;
@@ -29,18 +30,32 @@ const PORT = 8000;
 // a placeholder for
 let productsData;
 
-app.get("/", (req, res) => {
-    res.render("index");
-});
-
-app.get("/get-products", async (req, res) => {
+async function fetchProducts() {
     try {
         rawProductData = await readFile(
             path.join(__dirname, "products.json"),
             "utf8"
         );
         productsData = JSON.parse(rawProductData);
+    } catch (error) {
+        console.error(error);
+    }
+}
 
+app.get("/", async (req, res) => {
+    if (productsData) {
+        res.json(productsData);
+    } else {
+        res.render("loading");
+    }
+});
+
+app.get("/home", (req, res) => {
+    res.render("index");
+}); 
+
+app.get("/get-products", async (req, res) => {
+    try {
         res.json(productsData);
     } catch (err) {
         console.log(err);
@@ -49,4 +64,5 @@ app.get("/get-products", async (req, res) => {
 
 app.use("/products", productRouter);
 
+fetchProducts();
 app.listen(process.env.PORT || PORT);
