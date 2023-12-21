@@ -50,18 +50,6 @@ app.get("/", async (req, res) => {
     }
 });
 
-app.get("/home", (req, res) => {
-    res.render("index");
-}); 
-
-app.get("/get-products", async (req, res) => {
-    try {
-        res.json(productsData);
-    } catch (err) {
-        console.log(err);
-    }
-});
-
 app.use("/products", productRouter);
 
 fetchProducts();
