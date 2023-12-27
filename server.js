@@ -42,15 +42,9 @@ async function fetchProducts() {
     }
 }
 
-app.get("/", async (req, res) => {
-    if (productsData) {
-        res.json(productsData);
-    } else {
-        res.render("loading");
-    }
-});
+app.get("/", async (req, res) => {});
 
-app.use("/products", productRouter);
+app.use("/product", productRouter);
 
 fetchProducts();
 app.listen(process.env.PORT || PORT);

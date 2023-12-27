@@ -6,5 +6,9 @@
     "Game of Thrones Kit": {
         "Price": 100000000,
         "Tags": ["Super Rare", "Never existed!"]
+    },
+    "Product Name": {
+        "Price": 1290,
+        "Tags": []
     }
 }
