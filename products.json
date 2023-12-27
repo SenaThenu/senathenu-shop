@@ -1,14 +1,14 @@
 {
-    "Toothbrush": {
-        "Price": 9,
-        "Tags": ["Health"]
+    "toothbrush": {
+        "price": 9,
+        "tags": ["Health"]
     },
-    "Game of Thrones Kit": {
-        "Price": 100000000,
-        "Tags": ["Super Rare", "Never existed!"]
+    "game-of-thrones-kit": {
+        "price": 100000000,
+        "tags": ["Super Rare", "Never existed!"]
     },
-    "Product Name": {
-        "Price": 1290,
-        "Tags": []
+    "product-name": {
+        "price": 1290,
+        "tags": []
     }
 }

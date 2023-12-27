@@ -27,22 +27,23 @@ app.use(express.urlencoded({ extended: true })); // allows us to access the form
 
 const PORT = 8000;
 
-// a placeholder for
-let productsData;
-
 async function fetchProducts() {
     try {
         rawProductData = await readFile(
             path.join(__dirname, "products.json"),
             "utf8"
         );
-        productsData = JSON.parse(rawProductData);
+
+        // productsData is a global variable
+        global.productsData = JSON.parse(rawProductData);
     } catch (error) {
         console.error(error);
     }
 }
 
-app.get("/", async (req, res) => {});
+app.get("/", async (req, res) => {
+    res.json(productsData);
+});
 
 app.use("/product", productRouter);
 
