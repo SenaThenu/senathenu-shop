@@ -22,7 +22,7 @@ app.set("views", __dirname + "/views");
 app.set("layout", "layouts/layout");
 
 // static files
-app.use(app.static(__dirname + "/public"));
+app.use(express.static(__dirname + "/public"));
 
 app.use(cors()); // cross origin resource sharing set up!
 app.use(express.json()); // JSON format responses
