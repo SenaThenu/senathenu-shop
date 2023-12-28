@@ -6,5 +6,11 @@
     <p>
         <%= locals.description %>
     </p>
-    <button type=" button">Buy Me!</button>
+    <button type=" button">
+        <% if (locals.price > 0) { %>
+        Buy Me!
+        <% } else { %>
+        Claim for Free!
+        <% } %>
+    </button>
 </div>

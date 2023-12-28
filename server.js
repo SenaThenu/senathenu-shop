@@ -7,7 +7,8 @@ const express = require("express"); // to set up the RESTful server
 const expressLayouts = require("express-ejs-layouts");
 
 // middleware
-const cors = require("cors");``
+const cors = require("cors");
+``;
 
 // custom routers
 const productRouter = require("./routes/products");
@@ -46,7 +47,7 @@ async function fetchProducts() {
 }
 
 app.get("/", async (req, res) => {
-    res.json(productsData);
+    res.render("index", { products: productsData });
 });
 
 app.use("/product", productRouter);
