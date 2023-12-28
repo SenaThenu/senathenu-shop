@@ -7,7 +7,7 @@ router.get("/:product", (req, res) => {
 
     if (product in global.productsData) {
         res.render("product", {
-            name: product.replace("-", " "),
+            title: `${global.productsData[product]["displayName"]} - SenaVerse Shop`,
             ...productsData[product],
         });
     } else {

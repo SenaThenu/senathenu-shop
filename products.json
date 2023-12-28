@@ -1,13 +1,16 @@
 {
     "toothbrush": {
+        "displayName": "Toothbrush",
         "price": 9,
         "tags": ["Health"]
     },
     "game-of-thrones-kit": {
+        "displayName": "Game of Thrones Kit",
         "price": 100000000,
         "tags": ["Super Rare", "Never existed!"]
     },
     "product-name": {
+        "displayName": "Product Name",
         "price": 1290,
         "tags": []
     }
