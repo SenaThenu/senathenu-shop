@@ -3,11 +3,11 @@ const router = express.Router();
 
 router.get("/:product", (req, res) => {
     let product = req.params.product;
-    product = product.toLowerCase().replace("_", "-");
+    product = product.toLowerCase().replaceAll("-", "_");
 
     if (product in global.productsData) {
         res.render("product", {
-            title: `${global.productsData[product]["displayName"]} - SenaVerse Shop`,
+            title: `${global.productsData[product]["display_name"]} - SenaVerse Shop`,
             ...productsData[product],
         });
     } else {
