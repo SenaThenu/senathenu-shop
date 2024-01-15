@@ -8,7 +8,6 @@ const expressLayouts = require("express-ejs-layouts");
 
 // middleware
 const cors = require("cors");
-``;
 
 // custom routers
 const productRouter = require("./routes/products");
