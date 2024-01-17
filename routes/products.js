@@ -8,7 +8,6 @@ router.get("/:product", (req, res) => {
     if (product in global.productsData) {
         res.render("product", {
             title: `${global.productsData[product]["display_name"]} - SenaVerse Shop`,
-            uri: product,
             ...global.productsData[product],
         });
     } else {

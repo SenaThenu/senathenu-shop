@@ -5,17 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
-        <%= locals.title || "SenaVerse Shop" %>
+        <%= locals.title || "SenaThenu Shop" %>
     </title>
     <link href="/style.css" rel="stylesheet">
-    <link rel="icon" type="image/png" href="/logo.png">
+    <link rel="icon" type="image/png" href="/logo.svg">
 </head>
 
 <body>
     <header>
-        <div class="logo">
-            <img src="/logo.png" alt="SenaVerse Shop Logo">
-        </div>
+        <a href="https://senathenu.github.io/links" class="middle-header-link" target="_blank">
+            <div class="middle-header">
+                <div class="logo">
+                    <img src="/logo.svg" alt="SenaThenu Shop Logo">
+                </div>
+                <div class="shop-title">
+                    SenaThenu Shop!
+                </div>
+            </div>
+        </a>
     </header>
 
     <main>
@@ -23,11 +30,15 @@
     </main>
 
     <footer>
-        <div class="social-media">
-            <a href="https://twitter.com/SenaThenu/-" target="_blank">Twitter</a>
-            <a href="https://instagram.com/SenaThenu/" target="_blank">Instagram</a>
+        <div class="social-media-container">
+            <div class="social-media">
+                <a href="https://twitter.com/SenaThenu/" target="_blank">
+                    <img src="/social-media-icons/X.svg" alt="X Logo">
+                </a>
+            </div>
+
         </div>
-        <p>&copy; SenaVerse <%= new Date().getFullYear() %>. All Rights Reserved.</p>
+        <p>&copy; Senash Thenuja <%= new Date().getFullYear() %> | All Rights Reserved</p>
     </footer>
 </body>
 

@@ -6,7 +6,8 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "start": "node server.js",
-        "devStart": "nodemon server.js"
+        "devStart": "nodemon server.js",
+        "compileSass": "sass --watch styles/global.scss public/style.css"
     },
     "author": "Senash Thenuja",
     "license": "ISC",

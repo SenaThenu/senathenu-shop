@@ -1,44 +1,68 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
+*,
+*:after,
+*:before {
+  margin: 0;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 1.1rem;
+  box-sizing: border-box;
+}
 
 body {
-    margin: 0;
-    font-family: 'Space Mono', monospace;
+  background-color: hsl(192, 100%, 99%);
 }
 
 header {
-    background-color: #333;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.middle-header-link {
+  text-decoration: none;
+  color: inherit;
+  background: inherit;
+  margin: 1rem 0rem;
 }
 
-.logo img {
-    width: 100px;
+.middle-header {
+  position: fixed;
+  right: 5%;
+  left: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90vw;
+  height: 4.5rem;
+  background: hsla(198, 83%, 75%, 0.15);
+  border: 0.05px solid rgba(206, 214, 228, 0.6);
+  backdrop-filter: blur(20px);
+  box-shadow: 0px 5px 15px hsla(212, 78%, 42%, 0.4);
+  border-radius: 50px;
+}
+.middle-header .logo {
+  display: block;
+  height: 4rem;
+  width: 4rem;
+  margin-right: 0.5rem;
+  background: transparent;
+}
+.middle-header .logo img {
+  background: transparent;
+}
+.middle-header .shop-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  background: transparent;
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+.social-media-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social-media-container .social-media img {
+  height: 2rem;
 }
 
-.social-media a {
-    color: #fff;
-    margin: 0 10px;
-    text-decoration: none;
-}
-
-.social-media a:hover {
-    text-decoration: underline;
-}
+/*# sourceMappingURL=style.css.map */

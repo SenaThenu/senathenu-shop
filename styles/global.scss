@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+// theme variables
+$text: hsl(224, 100%, 10%);
+$background: hsl(192, 100%, 99%);
+$primary: hsl(212, 78%, 42%);
+$secondary: hsla(198, 83%, 75%, 0.15);
+$shadow: hsla(212, 78%, 42%, 0.4);
+$accent: hsl(212, 78%, 31%);
+
+*,
+*:after,
+*:before {
+    margin: 0;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.1rem;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $background;
+}
+
+// layout styles
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.middle-header-link {
+    text-decoration: none;
+    color: inherit;
+    background: inherit;
+    margin: 1rem 0rem;
+}
+
+.middle-header {
+    position: fixed;
+    right: 5%;
+    left: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    height: 4.5rem;
+    background: $secondary;
+    border: 0.05px solid rgba(206, 214, 228, 0.6);
+    backdrop-filter: blur(20px);
+    box-shadow: 0px 5px 15px $shadow;
+    border-radius: 50px;
+
+    .logo {
+        display: block;
+        height: 4rem;
+        width: 4rem;
+        margin-right: 0.5rem;
+        background: transparent;
+
+        img {
+            background: transparent;
+        }
+    }
+
+
+    .shop-title {
+        font-size: 1.6rem;
+        font-weight: 700;
+        background: transparent;
+    }
+}
+
+.social-media-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .social-media img {
+        height: 2rem;
+    }
+}
+
