@@ -41,7 +41,7 @@ header {
   background: hsla(198, 83%, 75%, 0.15);
   border: 0.05px solid rgba(206, 214, 228, 0.6);
   backdrop-filter: blur(20px);
-  box-shadow: 0px 5px 15px hsla(212, 78%, 42%, 0.4);
+  box-shadow: 0px 3px 6px hsla(212, 78%, 42%, 0.4);
   border-radius: 50px;
 }
 .middle-header .logo {
@@ -73,7 +73,7 @@ footer {
   background-color: hsla(198, 83%, 75%, 0.15);
   border: 0.05px solid rgba(206, 214, 228, 0.6);
   backdrop-filter: blur(20px);
-  box-shadow: 0px 5px 15px hsla(212, 78%, 42%, 0.4);
+  box-shadow: 0px 3px 6px hsla(212, 78%, 42%, 0.4);
   border-radius: 50px;
 }
 

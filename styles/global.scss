@@ -51,7 +51,7 @@ header {
     background: $secondary;
     border: 0.05px solid rgba(206, 214, 228, 0.6);
     backdrop-filter: blur(20px);
-    box-shadow: 0px 5px 15px $shadow;
+    box-shadow: 0px 3px 6px $shadow;
     border-radius: 50px;
 
     .logo {
@@ -87,7 +87,7 @@ footer {
     background-color: $secondary;
     border: 0.05px solid rgba(206, 214, 228, 0.6);
     backdrop-filter: blur(20px);
-    box-shadow: 0px 5px 15px $shadow;
+    box-shadow: 0px 3px 6px $shadow;
     border-radius: 50px;
     
 }
