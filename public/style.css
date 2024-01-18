@@ -31,6 +31,7 @@ header {
 
 .middle-header {
   position: fixed;
+  z-index: 100;
   right: 5%;
   left: 5%;
   display: flex;
