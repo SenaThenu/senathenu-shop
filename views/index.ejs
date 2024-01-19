@@ -1,6 +1,7 @@
 <% for (let product of Object.values(locals.products)) { %>
 
-<div>
+<div class="product-card">
+    <img src="<%= product["main_img"] %>" alt="<%= `${product["display_name"]} Preview Image` %>">
     <p>
         <%= product["display_name"] %>
     </p>

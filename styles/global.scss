@@ -6,7 +6,7 @@ $background: hsl(216, 71%, 7%);
 $primary: hsl(212, 77%, 34%);
 $secondary: hsl(257, 42%, 32%);
 $accent: hsl(201, 97%, 60%);
-$glass-bg: hsl(201, 97%, 60%, 0.2);
+$glass-bg: linear-gradient(hsla(212, 77%, 34%, 0.5), hsla(201, 97%, 60%, 0.3));
 
 *,
 *:after,
@@ -22,16 +22,12 @@ body {
     background-color: $background;
 }
 
-main {
-    margin: 1000px 20px;
-}
-
 // layout styles
 nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 90vw;
+    width: 85vw;
     max-width: 56rem;
     z-index: 10;
 
@@ -73,6 +69,36 @@ nav {
     }
 }
 
+main {
+    display: grid;
+    width: 90vw;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 2rem;
+    
+    align-items: center;
+    justify-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8rem;
+
+    .product-card {
+        display: flex;
+        flex-direction: column;
+
+        background: $glass-bg;
+        backdrop-filter: blur(20px);
+        border-radius: 20px;
+
+        padding: 1rem;
+
+        img {
+            width: 100%;
+            margin: auto;
+            border-radius: 20px;
+        }
+    }
+}
+
 footer {
     padding: 2rem;
     margin: 2rem auto;
@@ -81,7 +107,7 @@ footer {
     align-items: center;
     width: 90vw;
 
-    background-color: $glass-bg;
+    background: $glass-bg;
     backdrop-filter: blur(20px);
     border-radius: 50px;
     
