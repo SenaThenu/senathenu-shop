@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
 
 // theme variables
-$text: hsl(224, 100%, 10%);
-$background: hsl(192, 100%, 99%);
-$primary: hsl(212, 78%, 42%);
-$secondary: hsla(198, 83%, 75%, 0.15);
-$shadow: hsla(212, 78%, 42%, 0.4);
-$accent: hsl(212, 78%, 31%);
+$text: hsl(208, 49%, 92%);
+$background: hsl(216, 71%, 7%);
+$primary: hsl(212, 77%, 34%);
+$secondary: hsl(257, 42%, 32%);
+$accent: hsl(201, 97%, 60%);
+$glass-bg: hsl(201, 97%, 60%, 0.2);
 
 *,
 *:after,
@@ -15,6 +15,7 @@ $accent: hsl(212, 78%, 31%);
     font-family: 'Titillium Web', sans-serif;
     font-size: 1.1rem;
     box-sizing: border-box;
+    color: $text;
 }
 
 body {
@@ -26,40 +27,37 @@ main {
 }
 
 // layout styles
-header {
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 90vw;
+    max-width: 56rem;
+    z-index: 10;
+
+    position: fixed;
+    top: 0.75rem;
+    left: 50%;
+    transform: translate(-50%);
+
+    background: $glass-bg;
+    backdrop-filter: blur(20px);
+    border-radius: 50px;
+}
+
+.logo-container {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.middle-header-link {
     text-decoration: none;
     color: inherit;
-    background: inherit;
-    margin: 1rem 0rem;
-}
-
-.middle-header {
-    position: fixed;
-    z-index: 100;
-    right: 5%;
-    left: 5%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 90vw;
-    height: 4.5rem;
-    background: $secondary;
-    border: 0.05px solid rgba(206, 214, 228, 0.6);
-    backdrop-filter: blur(20px);
-    box-shadow: 0px 3px 6px $shadow;
-    border-radius: 50px;
+    padding: 0.25rem 0rem;
 
     .logo {
         display: block;
-        height: 4rem;
-        width: 4rem;
-        margin-right: 0.5rem;
+        height: 3.5rem;
+        width: 3.5rem;
+        margin-right: 0.3rem;
         background: transparent;
 
         img {
@@ -69,26 +67,22 @@ header {
 
 
     .shop-title {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
         font-weight: 700;
         background: transparent;
     }
 }
 
 footer {
-    position: relative;
-    right: 5%;
-    left: 5%;
     padding: 2rem;
-    margin: 2rem 0rem;
+    margin: 2rem auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 90vw;
-    background-color: $secondary;
-    border: 0.05px solid rgba(206, 214, 228, 0.6);
+
+    background-color: $glass-bg;
     backdrop-filter: blur(20px);
-    box-shadow: 0px 3px 6px $shadow;
     border-radius: 50px;
     
 }
