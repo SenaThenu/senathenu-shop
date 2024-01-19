@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+// theme variables
+$text: hsl(208, 49%, 92%);
+$background: hsl(216, 71%, 7%);
+$primary: hsl(212, 77%, 34%);
+$secondary: hsl(257, 42%, 32%);
+$accent: hsl(201, 97%, 60%);
+$glass-bg: linear-gradient(hsla(212, 77%, 34%, 0.5), hsla(201, 97%, 60%, 0.3));
+
+*,
+*:after,
+*:before {
+    margin: 0;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.1rem;
+    box-sizing: border-box;
+    color: $text;
+}
+
+body {
+    background-color: $background;
+}
+
+// layout styles
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 85vw;
+    max-width: 56rem;
+    z-index: 10;
+
+    position: fixed;
+    top: 0.75rem;
+    left: 50%;
+    transform: translate(-50%);
+
+    background: $glass-bg;
+    backdrop-filter: blur(20px);
+    border-radius: 50px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: inherit;
+    padding: 0.25rem 0rem;
+
+    .logo {
+        display: block;
+        height: 3.5rem;
+        width: 3.5rem;
+        margin-right: 0.3rem;
+        background: transparent;
+
+        img {
+            background: transparent;
+        }
+    }
+
+
+    .shop-title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        background: transparent;
+    }
+}
+
+main {
+    display: grid;
+    width: 90vw;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    grid-auto-flow: row;
+    
+    align-items: center;
+    justify-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8rem;
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .product-card {
+        display: flex;
+        flex-direction: column;
+
+        background: $glass-bg;
+        backdrop-filter: blur(20px);
+        border-radius: 20px;
+
+        padding: 1rem;
+
+        transform: scale(1);
+        transition: transform 500ms ease-in-out;
+
+        img {
+            width: 100%;
+            margin: auto;
+            border-radius: 20px;
+        }
+
+        .name {
+            font-size: 1.3rem;
+        }
+
+        .price {
+            font-size: 1.1rem;
+        }
+    }
+
+    .product-card:hover {
+        transform: scale(1.03);
+    }
+}
+
+footer {
+    padding: 2rem;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
+
+    background: $glass-bg;
+    backdrop-filter: blur(20px);
+    border-radius: 50px;
+    
+}
+
+.social-media-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .social-media img {
+        height: 2rem;
+    }
+}
+

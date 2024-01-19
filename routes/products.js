@@ -8,7 +8,7 @@ router.get("/:product", (req, res) => {
     if (product in global.productsData) {
         res.render("product", {
             title: `${global.productsData[product]["display_name"]} - SenaVerse Shop`,
-            ...productsData[product],
+            ...global.productsData[product],
         });
     } else {
         res.render("errors/404");
