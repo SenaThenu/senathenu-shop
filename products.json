@@ -1,7 +1,7 @@
 {
     "toothbrush": {
         "display_name": "Toothbrush",
-        "price": 9,
+        "price": 9.99,
         "main_img": "/product-images/toothbrush/main.jpg",
         "description": "This is what all the celebrities use to brush their teeth!",
         "tags": ["Health"]

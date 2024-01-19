@@ -56,13 +56,18 @@ nav {
 main {
   display: grid;
   width: 90vw;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
+  grid-auto-flow: row;
   align-items: center;
   justify-items: center;
   margin-left: auto;
   margin-right: auto;
   margin-top: 8rem;
+}
+main a {
+  text-decoration: none;
+  color: inherit;
 }
 main .product-card {
   display: flex;
@@ -71,11 +76,22 @@ main .product-card {
   backdrop-filter: blur(20px);
   border-radius: 20px;
   padding: 1rem;
+  transform: scale(1);
+  transition: transform 500ms ease-in-out;
 }
 main .product-card img {
   width: 100%;
   margin: auto;
   border-radius: 20px;
+}
+main .product-card .name {
+  font-size: 1.3rem;
+}
+main .product-card .price {
+  font-size: 1.1rem;
+}
+main .product-card:hover {
+  transform: scale(1.03);
 }
 
 footer {

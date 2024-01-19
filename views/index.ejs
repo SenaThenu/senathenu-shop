@@ -1,13 +1,16 @@
-<% for (let product of Object.values(locals.products)) { %>
+<% for (let product in locals.products) { %>
 
-<div class="product-card">
-    <img src="<%= product["main_img"] %>" alt="<%= `${product["display_name"]} Preview Image` %>">
-    <p>
-        <%= product["display_name"] %>
-    </p>
-    <p>
-        <%= product["price"] %>
-    </p>
-</div>
+<% let productData = locals.products[product] %>
+<a href="<%= `product/${product}` %>">
+    <div class="product-card">
+        <img src="<%= productData["main_img"] %>" alt="<%= `${productData["display_name"]} Preview Image` %>">
+        <div class="name">
+            <%= productData["display_name"] %>
+        </div>
+        <div class="price">
+            <%= `$${(productData["price"]).toFixed(2)} USD` %>
+        </div>
+    </div>
+</a>
 
 <% } %>
