@@ -1,16 +1,18 @@
-<% for (let product in locals.products) { %>
+<div class="product-cards-container">
+    <% for (let product in locals.products) { %>
 
-<% let productData = locals.products[product] %>
-<a href="<%= `product/${product}` %>">
-    <div class="product-card">
-        <img src="<%= productData["main_img"] %>" alt="<%= `${productData["display_name"]} Preview Image` %>">
-        <div class="name">
-            <%= productData["display_name"] %>
+    <% let productData = locals.products[product] %>
+    <a href="<%= `product/${product}` %>">
+        <div class="product-card">
+            <img src="<%= productData["main_img"] %>" alt="<%= `${productData["display_name"]} Preview Image` %>">
+            <div class="name">
+                <%= productData["display_name"] %>
+            </div>
+            <div class="price">
+                <%= `$${(productData["price"]).toFixed(2)} USD` %>
+            </div>
         </div>
-        <div class="price">
-            <%= `$${(productData["price"]).toFixed(2)} USD` %>
-        </div>
-    </div>
-</a>
+    </a>
 
-<% } %>
+    <% } %>
+</div>
