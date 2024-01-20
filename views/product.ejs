@@ -1,16 +1,23 @@
-<img src="<%= locals.main_img %>" alt="Image">
-<div>
-    <h1>
-        <%= locals.display_name %>
-    </h1>
-    <p>
-        <%= locals.description %>
-    </p>
-    <button type="button">
-        <% if (locals.price > 0) { %>
-        Buy Me!
-        <% } else { %>
-        Claim for Free!
-        <% } %>
-    </button>
+<div class="product">
+    <div class="product-image">
+        <img src="<%= locals.main_img %>" alt="Image">
+    </div>
+    <div class="product-details">
+        <h1 class="name">
+            <%= locals.display_name %>
+        </h1>
+        <h2 class="price">
+            <%= `$${locals.price.toFixed(2)} USD` %>
+        </h2>
+        <p class="description">
+            <%= locals.description %>
+        </p>
+        <button type="button" class="call-to-action">
+            <% if (locals.price > 0) { %>
+            Buy Now!
+            <% } else { %>
+            Claim for Free!
+            <% } %>
+        </button>
+    </div>
 </div>

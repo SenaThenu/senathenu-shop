@@ -69,7 +69,7 @@ nav {
     }
 }
 
-main {
+.product-cards-container {
     display: grid;
     width: 90vw;
     grid-template-columns: repeat(3, 1fr);
@@ -119,6 +119,58 @@ main {
         transform: scale(1.03);
     }
 }
+
+// this holds the style rules for a product page
+.product {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 8rem;
+    width: 80vw;
+
+    .product-image {
+        width: 45%;
+        img {
+            width: 100%;
+            max-width: 30rem;
+            border-radius: 20px;
+        }
+    }
+
+    .product-details {
+        width: 55%;
+        margin-left: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        .name {
+            font-size: 2rem;
+        }
+
+        .price {
+            font-size: 1.5rem;
+        }
+
+        .description {
+            margin-top: 1.2rem;
+            font-size: 1.25rem;
+        }
+
+        .call-to-action {
+            margin-top: 1.25rem;
+            height: 2.3rem;
+            border-radius: 50px;
+            background: $glass-bg;
+            backdrop-filter: blur(20px);
+            border: none;
+        }
+    }
+}
+
+
 
 footer {
     padding: 2rem;
