@@ -4,7 +4,10 @@
     <% let productData = locals.products[product] %>
     <a href="<%= `product/${product}` %>">
         <div class="product-card">
-            <img src="<%= productData["main_img"] %>" alt="<%= `${productData["display_name"]} Preview Image` %>">
+            <div class="preview">
+                <img src="<%= productData["preview_img"] %>" alt="<%= `${productData["display_name"]} Preview Image #1` %>">
+                <img class="hover-img" src="<%= productData["hover_preview_img"] %>" alt="<%= `${productData["display_name"]} Preview Image #2` %>">
+            </div>
             <div class="name">
                 <%= productData["display_name"] %>
             </div>

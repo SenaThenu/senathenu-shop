@@ -2,22 +2,25 @@
     "toothbrush": {
         "display_name": "Toothbrush",
         "price": 9.99,
-        "main_img": "/product-images/toothbrush/main.jpg",
         "description": "This is what all the celebrities use to brush their teeth!",
-        "tags": ["Health"]
+        "images_location": "/product-images/toothbrush/",
+        "preview_img": "/product-images/toothbrush/main.jpg",
+        "hover_preview_img": "/product-images/toothbrush/preview.jpg"
     },
     "game_of_thrones_kit": {
         "display_name": "Game of Thrones Kit",
         "price": 100000000,
-        "main_img": "/product-images/got/main.jpg",
         "description": "This is super-rare and this is the only one that exists!",
-        "tags": ["Super Rare", "Never existed!"]
+        "images_location": "/product-images/got/",
+        "preview_img": "/product-images/got/main.jpg",
+        "hover_preview_img": "/product-images/got/preview.jpg"
     },
     "product_name": {
         "display_name": "Product Name",
-        "main_img": "/product-images/product/main.jpg",
         "price": 1290,
         "description": "lorem ipsum",
-        "tags": []
+        "images_location": "/product-images/product/",
+        "preview_img": "/product-images/product/main.jpg",
+        "hover_preview_img": "/product-images/product/preview.jpg"
     }
 }
