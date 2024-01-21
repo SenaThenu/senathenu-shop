@@ -1,6 +1,9 @@
 <div class="product">
     <div class="product-image">
-        <img src="<%= locals.preview_img %>" alt="Image">
+        <% locals.images.forEach((image, index) => { %>
+        <img src="<%= `/product-images/${locals.uri}/${image}` %>" alt="<%= `Preview Image ${index + 1}` %>">
+        <% }) %>
+
     </div>
     <div class="product-details">
         <h1 class="name">
