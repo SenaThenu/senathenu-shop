@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 *,
 *:after,
 *:before {
@@ -130,6 +138,20 @@ nav {
 .product .product-preview .focus-img {
   width: 80%;
   margin-left: 1rem;
+}
+.product .product-preview .focus-img .all-imgs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.product .product-preview .focus-img .all-imgs img {
+  display: none;
+  animation: fade 200ms ease-in-out;
+}
+.product .product-preview .focus-img .all-imgs .focused {
+  display: block;
+  opacity: 1;
 }
 .product .product-preview .focus-img img {
   width: 100%;

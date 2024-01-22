@@ -8,6 +8,16 @@ $secondary: hsl(257, 42%, 32%);
 $accent: hsl(201, 97%, 60%);
 $glass-bg: linear-gradient(hsla(212, 77%, 34%, 0.5), hsla(201, 97%, 60%, 0.3));
 
+// animations
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 *,
 *:after,
 *:before {
@@ -159,6 +169,24 @@ nav {
         .focus-img {
             width: 80%;
             margin-left: 1rem;
+
+            .all-imgs {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                
+                img {
+                    display: none;
+                    animation: fade 200ms ease-in-out;
+                }
+
+                .focused {
+                    display: block;
+                    opacity: 1;
+                }
+            }
+
             img {
                 width: 100%;
                 max-width: 30rem;
