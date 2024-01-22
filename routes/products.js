@@ -28,7 +28,6 @@ router.get("/:product", (req, res) => {
             path.join(__dirname, global.productsData[product].images_location)
         )
             .then((images) => {
-                console.log(images);
                 res.render("product", {
                     title: `${global.productsData[product]["display_name"]} - SenaThenu Shop`,
                     uri: product,
