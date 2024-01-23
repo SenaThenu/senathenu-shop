@@ -8,6 +8,9 @@ $secondary: hsl(257, 42%, 32%);
 $accent: hsl(201, 97%, 60%);
 $glass-bg: linear-gradient(hsla(212, 77%, 34%, 0.5), hsla(201, 97%, 60%, 0.3));
 
+// animation variables
+$preview-switch-time: 200ms;
+
 // animations
 @keyframes fade {
     from {
@@ -177,8 +180,11 @@ nav {
                 align-items: center;
                 
                 img {
+                    width: 100%;
+                    max-width: 30rem;
+                    border-radius: 20px;
                     display: none;
-                    animation: fade 200ms ease-in-out;
+                    animation: fade $preview-switch-time ease-in-out;
                 }
 
                 .focused {
@@ -187,10 +193,26 @@ nav {
                 }
             }
 
-            img {
-                width: 100%;
-                max-width: 30rem;
-                border-radius: 20px;
+            .img-dots {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: -1rem;
+                .dot {
+                    display: inline-block;
+                    height: 15px;
+                    width: 15px;
+                    margin: 0 0.1rem;
+                    background-color: $primary;
+                    border-radius: 50%;
+                    cursor: pointer;
+                    filter: brightness(60%);
+                    transition: filter $preview-switch-time ease-in-out;
+
+                    &.focused {
+                        filter: brightness(130%);
+                    }
+                }
             }
         }
         .all-selector-imgs {
@@ -203,7 +225,13 @@ nav {
                 width: 100%;
                 max-width: 6rem;
                 border-radius: 20px;
-                margin: 0.3rem 0;
+                margin-bottom: 0.3rem;
+                cursor: pointer;
+                transition: border $preview-switch-time ease-in-out;
+                
+                &.focused {
+                    border: 0.25rem solid $accent;
+                }
             }
         }
     }

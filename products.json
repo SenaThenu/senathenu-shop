@@ -7,7 +7,7 @@
         "preview_img": "/product-images/toothbrush/main.jpg",
         "hover_preview_img": "/product-images/toothbrush/preview.jpg"
     },
-    "game_of_thrones_kit": {
+    "got": {
         "display_name": "Game of Thrones Kit",
         "price": 100000000,
         "description": "This is super-rare and this is the only one that exists!",
@@ -15,7 +15,7 @@
         "preview_img": "/product-images/got/main.jpg",
         "hover_preview_img": "/product-images/got/preview.jpg"
     },
-    "product_name": {
+    "product": {
         "display_name": "Product Name",
         "price": 1290,
         "description": "lorem ipsum",
