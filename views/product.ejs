@@ -1,6 +1,22 @@
 <div class="product">
-    <div class="product-image">
-        <img src="<%= locals.main_img %>" alt="Image">
+    <div class="product-preview">
+        <div class="focus-img">
+            <div class="all-imgs">
+                <% locals.images.forEach((image, index) => { %>
+                <img src="<%= `/product-images/${locals.uri}/${image}` %>" alt="<%= `Focus Image ${index + 1}` %>">
+                <% }) %>
+            </div>
+            <div class="img-dots">
+                <% for (let i=0; i < locals.images.length; i++) {%>
+                <span class="dot"></span>
+                <% } %>
+            </div>
+        </div>
+        <div class="all-selector-imgs">
+            <% locals.images.forEach((image, index) => { %>
+            <img src="<%= `/product-images/${locals.uri}/${image}` %>" alt="<%= `Preview Image ${index + 1}` %>">
+            <% }) %>
+        </div>
     </div>
     <div class="product-details">
         <h1 class="name">
@@ -21,3 +37,5 @@
         </button>
     </div>
 </div>
+
+<script src="/script.js" defer></script>
