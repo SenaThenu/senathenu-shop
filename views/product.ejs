@@ -28,13 +28,13 @@
         <p class="description">
             <%= locals.description %>
         </p>
-        <button type="button" class="call-to-action">
+        <a href="<%= locals.link %>" class="call-to-action" target="_blank">
             <% if (locals.price > 0) { %>
             Buy Now!
             <% } else { %>
             Claim for Free!
             <% } %>
-        </button>
+        </a>
     </div>
 </div>
 

@@ -234,12 +234,21 @@ nav {
   font-size: 1.25rem;
 }
 .product .product-details .call-to-action {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 1.25rem;
   height: 2.3rem;
   border-radius: 50px;
   background: linear-gradient(hsla(212, 77%, 34%, 0.5), hsla(201, 97%, 60%, 0.3));
   backdrop-filter: blur(20px);
   border: none;
+  transition: all 200ms ease-in-out;
+}
+.product .product-details .call-to-action:hover {
+  filter: brightness(115%);
+  transform: scale(1.03);
 }
 
 footer {

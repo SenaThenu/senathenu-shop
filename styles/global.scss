@@ -286,12 +286,22 @@ nav {
         }
 
         .call-to-action {
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             margin-top: 1.25rem;
             height: 2.3rem;
             border-radius: 50px;
             background: $glass-bg;
             backdrop-filter: blur(20px);
             border: none;
+            transition: all $preview-switch-time ease-in-out;
+
+            &:hover {
+                filter: brightness(115%);
+                transform: scale(1.03);
+            }
         }
     }
 }
