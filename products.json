@@ -1,8 +1,9 @@
 {
     "toothbrush": {
         "display_name": "Toothbrush",
-        "price": 9.99,
+        "price": 0,
         "description": "This is what all the celebrities use to brush their teeth!",
+        "link": "https://senathenu.github.io/links",
         "images_location": "../public/product-images/toothbrush",
         "preview_img": "/product-images/toothbrush/main.jpg",
         "hover_preview_img": "/product-images/toothbrush/preview.jpg"
@@ -11,6 +12,7 @@
         "display_name": "Game of Thrones Kit",
         "price": 100000000,
         "description": "This is super-rare and this is the only one that exists!",
+        "link": "https://senathenu.github.io/links",
         "images_location": "../public/product-images/got",
         "preview_img": "/product-images/got/main.jpg",
         "hover_preview_img": "/product-images/got/preview.jpg"
@@ -19,6 +21,7 @@
         "display_name": "Product Name",
         "price": 1290,
         "description": "lorem ipsum",
+        "link": "https://senathenu.github.io/links",
         "images_location": "../public/product-images/product",
         "preview_img": "/product-images/product/main.jpg",
         "hover_preview_img": "/product-images/product/preview.jpg"
