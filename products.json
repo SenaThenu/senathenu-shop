@@ -1,29 +1,29 @@
 {
-    "toothbrush": {
-        "display_name": "Toothbrush",
+    "world-wonders-wallpapers": {
+        "display_name": "World Wonders Wallpapers",
+        "price": 3.99,
+        "description": "A Cartoon-Style Wallpaper Pack of the World Wonders to make your precious mobile enchanting...",
+        "link": "https://senathenu.gumroad.com/l/world-wonders-mobile-wallpapers",
+        "images_location": "../public/product-images/world-wonders-wallpapers",
+        "preview_img": "/product-images/world-wonders-wallpapers/main.png",
+        "hover_preview_img": "/product-images/world-wonders-wallpapers/preview.png"
+    },
+    "study-sphere": {
+        "display_name": "StudySphere",
         "price": 0,
-        "description": "This is what all the celebrities use to brush their teeth!",
-        "link": "https://senathenu.github.io/links",
-        "images_location": "../public/product-images/toothbrush",
-        "preview_img": "/product-images/toothbrush/main.jpg",
-        "hover_preview_img": "/product-images/toothbrush/preview.jpg"
+        "description": "Notion class notes/study template automated using a CLI to seamlessly integrate scientifically proven study techniques with minimal friction.",
+        "link": "https://github.com/SenaThenu/StudySphere",
+        "images_location": "../public/product-images/study-sphere",
+        "preview_img": "/product-images/study-sphere/main.png",
+        "hover_preview_img": "/product-images/study-sphere/preview.jpg"
     },
-    "got": {
-        "display_name": "Game of Thrones Kit",
-        "price": 100000000,
-        "description": "This is super-rare and this is the only one that exists!",
-        "link": "https://senathenu.github.io/links",
-        "images_location": "../public/product-images/got",
-        "preview_img": "/product-images/got/main.jpg",
-        "hover_preview_img": "/product-images/got/preview.jpg"
-    },
-    "product": {
-        "display_name": "Product Name",
-        "price": 1290,
-        "description": "lorem ipsum",
-        "link": "https://senathenu.github.io/links",
-        "images_location": "../public/product-images/product",
-        "preview_img": "/product-images/product/main.jpg",
-        "hover_preview_img": "/product-images/product/preview.jpg"
+    "link-orchard": {
+        "display_name": "Link Orchard",
+        "price": 0,
+        "description": "A no-code open-source Link in Bio tool | Superb alternative to Linktree | Highly customizable and allows you to add your own flavor!",
+        "link": "https://github.com/SenaThenu/link-orchard",
+        "images_location": "../public/product-images/link-orchard",
+        "preview_img": "/product-images/link-orchard/main.png",
+        "hover_preview_img": "/product-images/link-orchard/preview.jpg"
     }
 }

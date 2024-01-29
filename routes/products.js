@@ -21,7 +21,7 @@ async function readProductImages(imagesPath) {
 
 router.get("/:product", (req, res) => {
     let product = req.params.product;
-    product = product.toLowerCase().replaceAll("-", "_");
+    product = product.toLowerCase().replaceAll("_", "-");
 
     if (product in global.productsData) {
         readProductImages(

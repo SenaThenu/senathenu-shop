@@ -49,6 +49,7 @@
 
 You can find the source code behind the SenaVerse shop here!
 If you wanna create your own shop like this... the news is good, buddy! I'm gonna release a fully open source ecommerce website template in the near future... Stay Tuned for it!
+Separate stuff using hyphens!
 
 > \[!IMPORTANT]
 >
