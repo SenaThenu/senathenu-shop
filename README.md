@@ -4,7 +4,7 @@
 <div align="center">
   <!-- PROJECT LOGO -->
   <a href="https://github.com/SenaThenu/senathenu-shop">
-    <img src="https://github.com/SenaThenu/senathenu-shop/blob/main/assets/logo.svg" alt="Logo" height="250">
+    <img src="https://github.com/SenaThenu/senathenu-shop/blob/main/public/logo.svg" alt="Logo" height="100">
   </a>
 
   <!-- PROJECT TITLE -->
@@ -59,7 +59,7 @@ Separate stuff using hyphens!
 
 ### Built With 🔧
 
-<img src="https://img.shields.io/badge/JavaScript-f7df1d?style=for-the-badge&logo=javascript&logoColor=000" alt="JavaScript"> <img src="https://img.shields.io/badge/Express.js-c3c3c3?style=for-the-badge&logo=express&logoColor=000" alt="Express.js">
+<img src="https://img.shields.io/badge/JavaScript-f7df1d?style=for-the-badge&logo=javascript&logoColor=000" alt="JavaScript"> <img src="https://img.shields.io/badge/Express.js-c3c3c3?style=for-the-badge&logo=express&logoColor=000" alt="Express.js"> <img src="https://img.shields.io/badge/SCSS-cd6799?style=for-the-badge&logo=sass&logoColor=fff" alt="SCSS"> <img src="https://img.shields.io/badge/HTML-fc4a0b?style=for-the-badge&logo=html5&logoColor=fff" alt="HTML"> <img src="https://img.shields.io/badge/CSS-1572b6?style=for-the-badge&logo=css3&logoColor=fff" alt="HTML">
 
 <p align="right"><a href="#readme-top">Jump to Top<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand gestures/Index Pointing Up.png" alt="Pointing Up" width="25" height="25" /></a></p>
 
