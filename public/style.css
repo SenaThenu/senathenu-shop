@@ -65,9 +65,9 @@ nav {
   display: grid;
   width: 90vw;
   grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 1fr;
   grid-gap: 2rem;
-  grid-auto-flow: row;
-  align-items: center;
+  align-items: stretch;
   justify-items: center;
   margin-left: auto;
   margin-right: auto;
@@ -80,6 +80,7 @@ nav {
 .product-cards-container .product-card {
   display: flex;
   flex-direction: column;
+  height: 100%;
   background: linear-gradient(hsla(212, 77%, 34%, 0.5), hsla(201, 97%, 60%, 0.3));
   backdrop-filter: blur(20px);
   border-radius: 20px;
