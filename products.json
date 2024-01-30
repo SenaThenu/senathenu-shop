@@ -1,12 +1,12 @@
 {
     "world-wonders-wallpapers": {
-        "display_name": "World Wonders Wallpapers",
+        "display_name": "World Wonders Wallpaper Pack",
         "price": 3.99,
         "description": "A Cartoon-Style Wallpaper Pack of the World Wonders to make your precious mobile enchanting...",
         "link": "https://senathenu.gumroad.com/l/world-wonders-mobile-wallpapers",
         "images_location": "../public/product-images/world-wonders-wallpapers",
         "preview_img": "/product-images/world-wonders-wallpapers/main.png",
-        "hover_preview_img": "/product-images/world-wonders-wallpapers/preview.jpg"
+        "hover_preview_img": "/product-images/world-wonders-wallpapers/preview.png"
     },
     "study-sphere": {
         "display_name": "StudySphere",
