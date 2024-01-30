@@ -12,50 +12,52 @@
 </head>
 
 <body>
-    <header>
-        <nav class="nav-bar">
-            <div>
-                <a href="/" class="logo-container">
-                    <div class="logo">
-                        <img src="/logo.svg" alt="SenaThenu Shop Logo">
-                    </div>
-                    <div class="shop-title">
-                        SenaThenu Shop!
-                    </div>
-                </a>
+    <div id="content">
+        <header>
+            <nav class="nav-bar">
+                <div>
+                    <a href="/" class="logo-container">
+                        <div class="logo">
+                            <img src="/logo.svg" alt="SenaThenu Shop Logo">
+                        </div>
+                        <div class="shop-title">
+                            SenaThenu Shop!
+                        </div>
+                    </a>
+                </div>
+            </nav>
+
+            <div class="main-header">
+
             </div>
-        </nav>
 
-        <div class="main-header">
+        </header>
 
-        </div>
+        <main>
+            <%- body %>
+        </main>
 
-    </header>
-
-    <main>
-        <%- body %>
-    </main>
-
-    <footer>
-        <div class="social-media-container">
-            <div class="social-media">
-                <a href="https://twitter.com/SenaThenu/" target="_blank">
-                    <img src="/social-media-icons/X.svg" alt="X Logo">
-                </a>
+        <footer>
+            <div class="social-media-container">
+                <div class="social-media">
+                    <a href="https://twitter.com/SenaThenu/" target="_blank">
+                        <img src="/social-media-icons/X.svg" alt="X Logo">
+                    </a>
+                </div>
+                <div class="social-media">
+                    <a href="https://github.com/SenaThenu/senathenu-shop" target="_blank">
+                        <img src="/social-media-icons/GitHub.svg" alt="GitHub Logo">
+                    </a>
+                </div>
+                <div class="social-media">
+                    <a href="https://github.com/SenaThenu/senathenu-shop" target="_blank">
+                        <img src="/social-media-icons/Linkedin.svg" alt="Linkedin Logo">
+                    </a>
+                </div>
             </div>
-            <div class="social-media">
-                <a href="https://github.com/SenaThenu/senathenu-shop" target="_blank">
-                    <img src="/social-media-icons/GitHub.svg" alt="GitHub Logo">
-                </a>
-            </div>
-            <div class="social-media">
-                <a href="https://github.com/SenaThenu/senathenu-shop" target="_blank">
-                    <img src="/social-media-icons/Linkedin.svg" alt="Linkedin Logo">
-                </a>
-            </div>
-        </div>
-        <p>&copy; Senash Thenuja <%= new Date().getFullYear() %></p>
-    </footer>
+            <p>&copy; Senash Thenuja <%= new Date().getFullYear() %></p>
+        </footer>
+    </div>
 </body>
 
 </html>

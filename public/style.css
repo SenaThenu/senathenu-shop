@@ -21,6 +21,10 @@ body {
   background-color: hsl(216, 71%, 7%);
 }
 
+#content {
+  animation: fade 500ms ease-in-out;
+}
+
 nav {
   display: flex;
   align-items: center;

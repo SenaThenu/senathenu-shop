@@ -35,6 +35,10 @@ body {
     background-color: $background;
 }
 
+#content {
+    animation: fade 500ms ease-in-out;
+}
+
 // layout styles
 nav {
     display: flex;
@@ -306,8 +310,6 @@ nav {
         }
     }
 }
-
-
 
 footer {
     padding: 2rem;
