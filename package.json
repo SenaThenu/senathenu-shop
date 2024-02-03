@@ -4,7 +4,7 @@
     "description": "The source code for the senaverse-shop",
     "main": "server.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "npm start",
         "start": "node server.js",
         "devStart": "nodemon server.js",
         "compileSass": "sass --watch styles/global.scss public/style.css"
