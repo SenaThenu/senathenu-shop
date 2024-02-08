@@ -48,6 +48,8 @@
 
 ## About The Project 📖
 
+https://github.com/SenaThenu/senathenu-shop/assets/98274844/6d7f643c-22d0-4f59-a25e-a01a186d99b5
+
 This is the source code of the SenaThenu Shop. You can use this as a template to create your own shop!
 Separate stuff using hyphens!
 
